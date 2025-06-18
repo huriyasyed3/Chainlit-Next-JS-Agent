@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 7860
 
-CMD ["chainlit", "run", "app.py", "--port", "7860", "--host", "0.0.0.0"]
+CMD ["chainlit", "run", "main.py", "--port", "7860", "--host", "0.0.0.0"]
