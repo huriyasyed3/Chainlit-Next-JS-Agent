@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.10
 
 WORKDIR /app
 
@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 7860
 
-CMD ["chainlit", "run", "main.py", "--port", "7860", "--host", "0.0.0.0"]
+CMD ["chainlit", "run", "main.py", "-h", "0.0.0.0", "--port", "7860"]
